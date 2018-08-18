@@ -2,6 +2,7 @@
 db.sqlite3
 
 xpenseapp\settings\local.py
+xpenseapp\settings\local2.py
 
 .DS_Store
 bin/
