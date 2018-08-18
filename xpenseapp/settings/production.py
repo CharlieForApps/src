@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY','*zwx$46mxhv74&6nml4x=wr09)fq=_bo4md-r9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['cbiappstest.herokuapp.com','cbiappstest.herokuapp.com']
+ALLOWED_HOSTS = ['cbiappstest.herokuapp.com','localhost']
 
 
 # Application definition
