@@ -20,12 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '*zwx$46mxhv74&6nml4x=wr09)fq=_bo4md-r9-m8bxszp$%9q'
+SECRET_KEY = os.environ.get('SECRET_KEY','*zwx$46mxhv74&6nml4x=wr09)fq=_bo4md-r9-m8bxszp$%9q')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['cbiappstest.herokuapp.com','.everdayapp.com']
 
 
 # Application definition
@@ -89,7 +89,10 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
+import dj_database_url
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
+# DATABASES['default']['CONN_MAX_AGE'] = 500
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
