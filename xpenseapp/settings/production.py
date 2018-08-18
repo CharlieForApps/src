@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY','*zwx$46mxhv74&6nml4x=wr09)fq=_bo4md-r9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['cbiappstest.herokuapp.com','.everdayapp.com']
+ALLOWED_HOSTS = ['cbiappstest.herokuapp.com','cbiappstest.herokuapp.com']
 
 
 # Application definition
@@ -140,12 +140,12 @@ LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'logoutmessage'
 USE_THOUSAND_SEPARATOR = True
 
-CORS_REPLACE_HTTPS_REFERER      = True
-HOST_SCHEME                     = "https://"
-SECURE_PROXY_SSL_HEADER         = ('HTTP_X_FORWARDED_PROTO', 'https')
-SECURE_SSL_REDIRECT             = True
-SESSION_COOKIE_SECURE           = True
-CSRF_COOKIE_SECURE              = True
-SECURE_HSTS_INCLUDE_SUBDOMAINS  = True
-SECURE_HSTS_SECONDS             = 1000000
-SECURE_FRAME_DENY               = True
+# CORS_REPLACE_HTTPS_REFERER      = True
+# HOST_SCHEME                     = "https://"
+# SECURE_PROXY_SSL_HEADER         = ('HTTP_X_FORWARDED_PROTO', 'https')
+# SECURE_SSL_REDIRECT             = True
+# SESSION_COOKIE_SECURE           = True
+# CSRF_COOKIE_SECURE              = True
+# SECURE_HSTS_INCLUDE_SUBDOMAINS  = True
+# SECURE_HSTS_SECONDS             = 1000000
+# SECURE_FRAME_DENY               = True
