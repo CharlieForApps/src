@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'dashboard',
     'profiles',
     'books',
+    'xpenseapp',
 ]
 
 MIDDLEWARE = [
@@ -65,6 +66,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        # 'DIRS': 'xpenseapp/Templates/',
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
